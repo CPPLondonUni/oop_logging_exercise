@@ -4,7 +4,7 @@
 Logger& get_logger()
 {
     // Change this to FileLogger once you have implemented that class
-    static Logger l;
+    static FileLogger l;
     return l;
 }
 

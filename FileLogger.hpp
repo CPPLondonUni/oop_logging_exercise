@@ -7,9 +7,11 @@
 
 #include <fstream>
 
-class FileLogger {
+class FileLogger : public Logger {
 public:
     FileLogger();
+
+    void log_message(const std::string& msg) override;
 
 private:
     std::ofstream stream_;
