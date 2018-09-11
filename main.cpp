@@ -1,10 +1,10 @@
 
-#include "FileLogger.hpp"
+#include "ConsoleLogger.hpp"
 
 Logger& get_logger()
 {
     // Change this to FileLogger once you have implemented that class
-    static FileLogger l;
+    static ConsoleLogger l;
     return l;
 }
 
